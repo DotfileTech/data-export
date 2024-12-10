@@ -1,4 +1,4 @@
-# Dotfile Case and Check Fetcher
+# Dotfile Sync
 
 This Python script fetches data from the Dotfile API and exports the data to CSV files.
 
