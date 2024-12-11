@@ -74,6 +74,7 @@ def main():
         details = fetch_case_details(case_id)
         if details:
             detailed_cases.append(details)
+        time.sleep(60 / RATE_LIMIT)  # Rate limiting
 
     save_to_csv(detailed_cases)
 

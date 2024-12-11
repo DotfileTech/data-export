@@ -75,6 +75,7 @@ def main():
         details = fetch_check_details(check_type, check_id)
         if details:
             detailed_checks.append(details)
+        time.sleep(60 / RATE_LIMIT)  # Rate limiting
 
     save_to_csv(detailed_checks)
 
